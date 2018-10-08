@@ -3,12 +3,12 @@ const expect = chai.expect;
 const sinon = require("sinon");
 const indexPage = require("../../controllers/app.controller.js");
 
-describe("AppController", function()  {
-  describe("getIndexPage", function() {
-    it("should send hey when user is logged in", function() {
+describe("AppController", function () {
+  describe("getIndexPage", function () {
+    it("should send hey when user is logged in", function () {
       // instantiate a user object with an empty isLoggedIn function
       let user = {
-        isLoggedIn: function(){}
+        isLoggedIn: function () { }
       }
 
       // Stub isLoggedIn function and make it return true always
@@ -21,7 +21,7 @@ describe("AppController", function()  {
 
       // Have `res` have a send key with a function value coz we use `res.send()` in our func
       let res = {
-        send: function(){}
+        send: function () { }
       }
 
       // mock res
