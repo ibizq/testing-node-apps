@@ -3,7 +3,7 @@ const expect = chai.expect;
 const sinon = require("sinon");
 const indexPage = require("../../controllers/app.controller.js");
 
-describe("AppController", function () {
+describe("AppControllerTest", function () {
   describe("getIndexPage", function () {
     it("should send hey when user is logged in", function () {
       // instantiate a user object with an empty isLoggedIn function
